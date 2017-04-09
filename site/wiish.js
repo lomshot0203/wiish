@@ -15,12 +15,11 @@ app.set('port', process.env.PORT || 3000);
 
 //static 미들웨어
 app.use(express.static(__dirname + '/public'));
-//kyb
+
 app.use(require('body-parser').urlencoded({extended: true}));
 
 
 app.get('/', function(req, res){
-  console.log('home 접속...');
   res.render('home');
 });
 
@@ -28,6 +27,22 @@ app.get('/about', function(req, res){
   res.render('about');
 });
 
+//관리자 대메뉴
+app.get('/admin', function(req, res){
+  res.render('admin/menu/menu');
+});
+
+//관리자 대메뉴 - 메뉴관리
+app.get('/admin/menu', function(req, res){
+  res.render('admin/menu/menu');
+});
+
+//관리자 대메뉴 - 사용자관리
+app.get('/admin/user', function(req, res){
+  res.render('admin/user/user');
+});
+
+/*
 var autoViews = {};
 app.use(function(req, res, next){
   var path = req.path.toLowerCase();
@@ -41,6 +56,7 @@ app.use(function(req, res, next){
   //뷰를 찾을 수 없으므로 404 핸들러에게 넘긴다.
   next();
 });
+*/
 
 app.use(function(req, res, next){
   res.status(404);
