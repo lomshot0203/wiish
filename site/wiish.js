@@ -14,7 +14,7 @@ if(process.env.NODE_ENV === "production"){
 app.set('port', process.env.PORT || 3000);
 
 //static 미들웨어
-app.use(express.static(__dirname + '/public'));
+app.use('/public', express.static(__dirname + '/public'));
 
 app.use(require('body-parser').urlencoded({extended: true}));
 
