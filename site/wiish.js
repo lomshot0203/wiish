@@ -2,6 +2,8 @@ var express = require('express');
 var fs = require('fs');
 
 var app = express();
+require('./routes.js')(app);
+
 
 var handlebars = require('express-handlebars').create({defaultLayout:'main'});
 app.engine('handlebars', handlebars.engine);
@@ -18,13 +20,17 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.use(require('body-parser').urlencoded({extended: true}));
 
-
+/*
 app.get('/', function(req, res){
   res.render('home');
 });
 
 app.get('/about', function(req, res){
   res.render('about');
+});
+
+app.get('/contact', function(req, res){
+  res.render('contact');
 });
 
 //관리자 대메뉴
@@ -41,6 +47,7 @@ app.get('/admin/menu', function(req, res){
 app.get('/admin/user', function(req, res){
   res.render('admin/user/user');
 });
+*/
 
 /*
 var autoViews = {};
