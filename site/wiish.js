@@ -20,34 +20,6 @@ app.use('/public', express.static(__dirname + '/public'));
 
 app.use(require('body-parser').urlencoded({extended: true}));
 
-/*
-app.get('/', function(req, res){
-  res.render('home');
-});
-
-app.get('/about', function(req, res){
-  res.render('about');
-});
-
-app.get('/contact', function(req, res){
-  res.render('contact');
-});
-
-//관리자 대메뉴
-app.get('/admin', function(req, res){
-  res.render('admin/menu/menu');
-});
-
-//관리자 대메뉴 - 메뉴관리
-app.get('/admin/menu', function(req, res){
-  res.render('admin/menu/menu');
-});
-
-//관리자 대메뉴 - 사용자관리
-app.get('/admin/user', function(req, res){
-  res.render('admin/user/user');
-});
-*/
 
 /*
 var autoViews = {};
