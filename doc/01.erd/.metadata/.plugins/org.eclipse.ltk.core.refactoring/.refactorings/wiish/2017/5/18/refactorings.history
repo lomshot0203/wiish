@@ -1,4 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="자원 &apos;wiish/admin/menuSetting.exerd&apos;을(를) &apos;admin.exerd&apos;(으)로 이름 바꾸기" description="&apos;menuSetting.exerd&apos; 자원 이름 바꾸기" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="admin/menuSetting.exerd" name="admin.exerd" stamp="1493650453840" updateReferences="true"/>
-</session>
