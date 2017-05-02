@@ -1,27 +1,27 @@
 {
   "name": "wiish",
   "version": "1.0.0",
-  "description": "node + express template web",
+  "description": "wiish is template node webapp",
   "main": "wiish.js",
-  "directories": {
-    "doc": "doc"
-  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "hanumoka",
-  "license": "ISC",
-  "dependencies": {
-    "body-parser": "^1.17.1",
-    "express": "^4.15.2",
-    "express-handlebars": "^3.0.0"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/hanumoka/wiish.git"
   },
+  "keywords": [
+    "hanumoka"
+  ],
+  "author": "hanumoka",
+  "license": "ISC",
   "bugs": {
     "url": "https://github.com/hanumoka/wiish/issues"
   },
-  "homepage": "https://github.com/hanumoka/wiish#readme"
+  "homepage": "https://github.com/hanumoka/wiish#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "express-handlebars": "^3.0.0"
+  }
 }
