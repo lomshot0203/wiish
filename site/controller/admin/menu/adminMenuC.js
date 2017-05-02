@@ -10,7 +10,7 @@ module.exports = {
     app.get('/admin/menu', this.home);
   },
   home:function(req, res, next){
-    console.log('동작2...');
+    console.log('동작2... nodemon 동작 하나?');
     res.render('admin/menu/menu');
   }
 };
