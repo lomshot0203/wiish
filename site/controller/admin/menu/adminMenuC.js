@@ -6,11 +6,9 @@
 
 module.exports = {
   resiterRoutes: function(app){
-    console.log('동작1...');
-    app.get('/admin/menu', this.home);
+    app.get('/admin/menu.do', this.home);
   },
   home:function(req, res, next){
-    console.log('동작2... nodemon 동작 하나?');
     res.render('admin/menu/menu');
   }
 };
